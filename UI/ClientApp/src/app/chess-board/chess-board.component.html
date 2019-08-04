@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="col-12">
+    <div class="row" *ngFor="let row of rows.reverse()">
+      <div class="chess-plate" *ngFor="let col of columns" [ngStyle]="getPlateStyle(row, col)" (click)="onPlateClicked(row, col)">
+        <img *ngIf="piece && piece.position.row === row && piece.position.col === col" [src]="imgPath" alt="pawn" />
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="onReset()">Reset Game</button>
+</div>

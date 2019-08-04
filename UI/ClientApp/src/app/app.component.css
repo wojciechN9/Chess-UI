@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  .body-content {
+    padding-top: 50px;
+  }
+}
+
+.chess-plate {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  text-align: center;
+}

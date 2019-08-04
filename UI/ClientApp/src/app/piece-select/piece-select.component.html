@@ -1,0 +1,4 @@
+<h1>Wybierz pionek</h1>
+<div *ngFor="let pieceType of pieceTypes">
+  <img [src]="getPath(pieceType)" [alt]="pieceType" (click)="onImageClicked(pieceType)" />
+</div>
